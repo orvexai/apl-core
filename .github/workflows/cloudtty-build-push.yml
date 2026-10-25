@@ -2,9 +2,7 @@ name: CloudTTY Build and Versioning
 
 on:
   push:
-    branches:
-      - 'main'
-
+    tags: ['**']
 env:
   NAMESPACE: linode
   REPO: apl-tty

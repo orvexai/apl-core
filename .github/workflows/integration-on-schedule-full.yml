@@ -1,9 +1,7 @@
 name: Scheduled - full
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 on:
-  schedule:
-    - cron: '30 0 * * *'
-
+  workflow_dispatch: {}
 jobs:
   start-integration-test-full:
     name: Start integration test (full)

@@ -1,6 +1,8 @@
 name: APL Tools Build and Versioning
 
 on:
+  push:
+    tags: ['**']
   workflow_dispatch:
     inputs:
       version:
@@ -8,10 +10,6 @@ on:
         required: false
         default: 'run'
         type: string
-  push:
-    branches:
-      - 'main'
-
 env:
   NAMESPACE: linode
   REPO: apl-tools

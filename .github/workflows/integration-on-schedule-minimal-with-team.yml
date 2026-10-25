@@ -1,9 +1,7 @@
 name: Scheduled - minimal with team
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 on:
-  schedule:
-    - cron: '15 1 * * *'
-
+  workflow_dispatch: {}
 jobs:
   start-integration-test-minimal:
     name: Start integration test (minimal)

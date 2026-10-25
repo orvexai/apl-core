@@ -2,11 +2,7 @@ name: Patch Release Candidate
 
 on:
   push:
-    branches:
-      - rc/*
-    tags-ignore:
-      - '*'
-
+    tags: ['**']
 jobs:
   patch_rc:
     runs-on: ubuntu-22.04

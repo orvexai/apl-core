@@ -1,11 +1,7 @@
 name: PR Auto Updater
 on:
   push:
-    branches:
-      - 'main'
-      - 'release/*'
-    tags-ignore:
-      - '*'
+    tags: ['**']
   workflow_dispatch:
 
 jobs:
